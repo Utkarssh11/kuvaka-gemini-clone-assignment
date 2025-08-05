@@ -88,33 +88,34 @@ npm run build
 
 ### OTP Simulation
 
-* 6-digit OTP required, but any number works
-* Simulated with setTimeout to mimic network delay
-* Country code options fetched from restcountries.com
+- The app asks for a 6-digit OTP, but any number works because it’s a demo.
+- It uses a delay to simulate a real network call.
+- Country codes are fetched from an API.
 
 ### AI Typing and Throttling
 
-* AI responses are delayed (2–5 seconds) to simulate real conversation
-* Typing indicator appears before response
-* Prevents message spamming
+- AI replies after 2 to 5 seconds to feel natural.
+- Shows a typing indicator while AI is “typing.”
+- Prevents sending messages too fast.
 
 ### Infinite Scroll (Reverse)
 
-* Loads older messages as user scrolls to top
-* 20 messages per scroll event
-* Built using Intersection Observer API
+- Loads older messages when you scroll up.
+- Loads 20 messages at a time.
+- Uses Intersection Observer to detect scrolling.
 
 ### Form Validation
 
-* Built using React Hook Form and Zod
-* Realtime validation for all input fields
-* Errors shown inline for better UX
+- Uses React Hook Form and Zod for checking inputs.
+- Shows errors as you type.
+- Errors appear below the input fields.
 
 ## Project Constraints
 
-* No backend; all data handled on client side
-* Any 6-digit OTP works; purely simulated
-* Messages, authentication, and theme preferences are stored in localStorage
+- No backend, everything works in the browser.
+- Any 6-digit OTP works (simulated).
+- Data and settings are saved in localStorage.
+
 
 ## Deployment Ready
 
@@ -125,6 +126,12 @@ You can deploy this project easily using:
 * Framework Preset: Vite
 * Build Command: `npm run build`
 * Output Directory: `dist`
+
+
+## Screenshot
+
+![App Screenshot](screenshots/screenshot.jpg)
+
 
 ## Contact
 
