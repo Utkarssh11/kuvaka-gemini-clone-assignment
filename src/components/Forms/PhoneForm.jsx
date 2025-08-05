@@ -21,7 +21,7 @@ const PhoneForm = ({ onSubmit, loading = false }) => {
   } = useForm({
     resolver: zodResolver(phoneSchema),
     defaultValues: {
-      countryCode: '+91', // Default to India
+      countryCode: '+91', 
       phoneNumber: ''
     }
   })
@@ -41,19 +41,19 @@ const PhoneForm = ({ onSubmit, loading = false }) => {
   }, [])
 
   const handleFormSubmit = (data) => {
-    // Clean the phone number by removing spaces and special characters
+   
     const cleanPhoneNumber = data.phoneNumber.replace(/\s+/g, '').replace(/[^\d]/g, '')
     const fullPhoneNumber = data.countryCode + cleanPhoneNumber
     onSubmit(fullPhoneNumber)
   }
 
-  // Handle phone number input changes
+ 
   const handlePhoneNumberChange = (e) => {
     const value = e.target.value
-    // Only allow digits and spaces
+    
     const cleanedValue = value.replace(/[^\d\s]/g, '')
     setValue('phoneNumber', cleanedValue)
-    // Trigger validation after a short delay
+   
     setTimeout(() => trigger('phoneNumber'), 100)
   }
 
