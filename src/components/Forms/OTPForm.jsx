@@ -20,18 +20,18 @@ const OTPForm = ({ onSubmit, loading = false, phoneNumber, onBack }) => {
   })
 
   const handleFormSubmit = (data) => {
-    // Clean the OTP by removing spaces and special characters
+    
     const cleanOTP = data.otp.replace(/\s+/g, '').replace(/[^\d]/g, '')
     onSubmit(cleanOTP)
   }
 
-  // Handle OTP input changes
+ 
   const handleOTPChange = (e) => {
     const value = e.target.value
-    // Only allow digits and spaces
+    
     const cleanedValue = value.replace(/[^\d\s]/g, '')
     setValue('otp', cleanedValue)
-    // Trigger validation after a short delay
+    
     setTimeout(() => trigger('otp'), 100)
   }
 
