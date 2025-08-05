@@ -7,7 +7,6 @@ export const useUIStore = create(
       darkMode: false,
       toggleDarkMode: () => {
         set((state) => ({ darkMode: !state.darkMode }))
-        // Update document class for Tailwind dark mode
         const isDark = !document.documentElement.classList.contains('dark')
         if (isDark) {
           document.documentElement.classList.add('dark')
