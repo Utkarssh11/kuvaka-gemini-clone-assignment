@@ -130,7 +130,7 @@ You can deploy this project easily using:
 
 ## Screenshot
 
-![App Screenshot](screenshots/screenshot.jpg)
+![App Screenshot](ss.jpg)
 
 
 ## Contact
