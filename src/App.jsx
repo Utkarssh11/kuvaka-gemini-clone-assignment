@@ -8,7 +8,7 @@ import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import { useAuthStore } from './store/authStore'
 
-// Separate component to use useLocation inside Router context
+
 const AppContent = () => {
   const { isAuthenticated, initializeAuth } = useAuthStore()
   const location = useLocation()
