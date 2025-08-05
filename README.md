@@ -41,7 +41,7 @@ A simple, responsive frontend clone of a Gemini-style AI chat app built with Rea
 
 ## Contact
 
-- Email: utkarsh@example.com  
+- Email: patidarutkarsh9@gmail.com 
 - LinkedIn: [https://www.linkedin.com/in/utkarsh-patidar-800081221/](https://www.linkedin.com/in/utkarsh-patidar-800081221/)
 
 ---
