@@ -104,7 +104,7 @@ const Dashboard = () => {
         </div>
       </header>
 
-      {/* Main Content */}
+      {}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -119,7 +119,7 @@ const Dashboard = () => {
           </Button>
         </div>
 
-        {/* Search Bar */}
+        {}
         <div className="relative mb-6">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
           <Input
@@ -130,7 +130,7 @@ const Dashboard = () => {
           />
         </div>
 
-        {/* Create Chat Form */}
+        {}
         {showCreateForm && (
           <div className="card p-6 mb-6">
             <form onSubmit={handleCreateChat} className="space-y-4">
@@ -164,7 +164,7 @@ const Dashboard = () => {
           </div>
         )}
 
-        {/* Chatrooms Grid */}
+        {}
         {filteredChatrooms.length === 0 ? (
           <div className="text-center py-12">
             <MessageSquare className="mx-auto h-12 w-12 text-gray-400" />
