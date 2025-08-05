@@ -1,6 +1,6 @@
 # Gemini Frontend Clone
 
-A simple, responsive frontend clone of a Gemini-style AI chat app built with React.
+A simple, responsive frontend clone of a Gemini-style AI chat app built with React
 
 ## Features
 
@@ -34,8 +34,8 @@ A simple, responsive frontend clone of a Gemini-style AI chat app built with Rea
 ## Notes
 
 - This is a demo app, no real OTPs sent.  
-- All data is saved locally (no backend).  
-- Works on phones and desktop with smooth UI.
+- All data is saved locally (no backend)
+- Works on phones and desktop with smooth UI
 
 ---
 
@@ -46,7 +46,7 @@ A simple, responsive frontend clone of a Gemini-style AI chat app built with Rea
 
 ---
 
-## A Note of Thanks 💛
+## Thank You 💛
 
-Thank you, **Kuvaka Tech**, for giving me the opportunity to work on this assignment.  
-It was a great experience to build and demonstrate my frontend skills through this project.
+Thank you, **Kuvaka Tech**, for giving me the opportunity to work on this assignment  
+It was a great experience to build and demonstrate my frontend skills through this project
