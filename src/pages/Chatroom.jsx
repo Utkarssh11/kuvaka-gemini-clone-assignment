@@ -56,13 +56,13 @@ const Chatroom = () => {
   const handleSendMessage = async (messageData) => {
     if (!messageData.content && !messageData.image) return
     
-    // Add user message
+   
     const userMessage = addMessage(chatId, messageData)
     
-    // Show typing indicator
+   
     setIsTyping(true)
     
-    // Simulate AI response
+ 
     try {
       const aiResponse = await getAIResponse(messageData.content || 'Image sent', chatId)
       addMessage(chatId, aiResponse)
@@ -97,7 +97,7 @@ const Chatroom = () => {
   
   return (
     <div className="flex flex-col h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
+      {}
       <header className="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center space-x-3">
@@ -124,12 +124,12 @@ const Chatroom = () => {
         </div>
       </header>
       
-      {/* Messages Container */}
+      {}
       <div 
         ref={chatContainerRef}
         className="flex-1 overflow-y-auto p-4 space-y-4"
       >
-        {/* Load more indicator */}
+        {}
         {hasMore && messages.length > messagesPerPage && (
           <div className="text-center py-2">
             <div className="inline-flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
@@ -139,7 +139,7 @@ const Chatroom = () => {
           </div>
         )}
         
-        {/* Messages */}
+        {}
         {displayedMessages.map((message, index) => {
           if (index === 0 && hasMore) {
             return (
@@ -151,14 +151,14 @@ const Chatroom = () => {
           return <Message key={message.id} message={message} />
         })}
         
-        {/* Typing indicator */}
+        {}
         {isTyping && <TypingIndicator />}
         
-        {/* Scroll anchor */}
+        {}
         <div ref={messagesEndRef} />
       </div>
       
-      {/* Message Input */}
+      {}
       <MessageInput 
         onSendMessage={handleSendMessage}
         disabled={isTyping}
