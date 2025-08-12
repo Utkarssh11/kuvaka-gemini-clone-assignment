@@ -78,12 +78,6 @@ npm run dev
 http://localhost:5173
 ````
 
-### Build for Production
-
-```bash
-npm run build
-```
-
 ## Key Implementation Details
 
 ### OTP Simulation
@@ -125,7 +119,6 @@ You can deploy this project easily using:
 
 * Framework Preset: Vite
 * Build Command: `npm run build`
-* Output Directory: `dist`
 
 
 ## Screenshot
